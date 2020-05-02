@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".AmbilLaundry">
     <EditText
-        android:id="@+id/nama_value"
+        android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_input"

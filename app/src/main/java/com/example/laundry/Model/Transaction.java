@@ -1,21 +1,19 @@
 package com.example.laundry.Model;
 
 public class Transaction {
-    String transactionId, transactionTanggal, transactionAmbil, transactionName, transactionJenis;
-    int transactionTotal, transactionBayar;
+    String transactionId, transactionAmbil, transactionName, transactionJenis, transactionDetail, transactionNameAmbil, transactionBayar;
 
-    public Transaction(){
+//    public Transaction(){}
 
-    }
-    public Transaction(String transactionId, String transactionTanggal, String transactionAmbil, String transactionName, String transactionJenis,
-                        int transactionTotal, int transactionBayar ){
+    public Transaction(String transactionId, String transactionAmbil, String transactionNameAmbil, String transactionName, String transactionJenis,
+                   String transactionBayar, String transactionDetail){
         this.transactionId = transactionId;
-        this.transactionTanggal = transactionTanggal;
         this.transactionAmbil = transactionAmbil;
         this.transactionName = transactionName;
+        this.transactionNameAmbil = transactionNameAmbil;
         this.transactionJenis = transactionJenis;
-        this.transactionTotal = transactionBayar;
         this.transactionBayar = transactionBayar;
+        this.transactionDetail = transactionDetail;
     }
 
     public String getTransactionId() {
@@ -26,20 +24,20 @@ public class Transaction {
         this.transactionId = transactionId;
     }
 
-    public String getTransactionTanggal() {
-        return transactionTanggal;
-    }
-
-    public void setTransactionTanggal(String transactionTanggal) {
-        this.transactionTanggal = transactionTanggal;
-    }
-
     public String getTransactionAmbil() {
         return transactionAmbil;
     }
 
     public void setTransactionAmbil(String transactionAmbil) {
         this.transactionAmbil = transactionAmbil;
+    }
+
+    public String getTransactionNameAmbil() {
+        return transactionNameAmbil;
+    }
+
+    public void setTransactionNameAmbil(String transactionNameAmbil) {
+        this.transactionNameAmbil = transactionNameAmbil;
     }
 
     public String getTransactionName() {
@@ -54,23 +52,24 @@ public class Transaction {
         return transactionJenis;
     }
 
-    public void setTransactionJenis(String transactionJenis) {
+    public void setTransactionenis(String transactionJenis) {
         this.transactionJenis = transactionJenis;
     }
 
-    public int getTransactionTotal() {
-        return transactionTotal;
-    }
-
-    public void setTransactionTotal(int transactionTotal) {
-        this.transactionTotal = transactionTotal;
-    }
-
-    public int getTransactionBayar() {
+    public String getTransactionBayar() {
         return transactionBayar;
     }
 
-    public void setTransactionBayar(int transactionBayar) {
+    public void setTransactionBayar(String transactionBayar) {
         this.transactionBayar = transactionBayar;
     }
+
+    public String getTransactionDetail() {
+        return transactionDetail;
+    }
+
+    public void setTransactionDetail(String transactionDetail) {
+        this.transactionDetail = transactionDetail;
+    }
+
 }

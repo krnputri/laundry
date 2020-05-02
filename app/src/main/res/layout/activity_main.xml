@@ -73,4 +73,16 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_margin="25dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/btnlogout"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="LOGOUT" />
 </RelativeLayout>
